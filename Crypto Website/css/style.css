@@ -2,7 +2,7 @@ body{
   font-family: Arial, Helvitca, sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  paddig:0;
+  padding:0;
   margin:0;
   background-color:#f4f4f4;
 }
@@ -14,19 +14,39 @@ body{
   overflow:hidden;
 }
 
+.dark{
+  padding: 15px;
+  background: #35424a;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 ul{
   margin:0;
   padding:0;
 }
 
-.button_1{
+.button_register{
   height:38px;
-  background: #e8491d;
+  background: #35424a;
+  border:0;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.button_login{
+  height:22px;
+  background: #35424a;
   border:0;
   padding-left: 20px;
   padding-right: 20px;
   color: #ffffff;
 }
+
+
 /* Header */
 header{
   background: #35424a;

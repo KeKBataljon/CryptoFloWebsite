@@ -42,21 +42,35 @@ jQuery(document).ready(function() {
     	});
 
     });
-    var email = $('#form-username').val();
-		var password = $('#form-password').val();
+    $('.registration-form').on('submit', function(e) {
+        	e.preventDefault();
+        	$(this).find('input[type="text"], textarea').each(function(){
+        		if( $(this).val() == "" ) {
+        			e.preventDefault();
+        			$(this).addClass('input-error');
+        		}
+        		else {
+        			$(this).removeClass('input-error');
+        		}
+    		});
 
-		var url = 'http://cryptoflo-env.eu-west-1.elasticbeanstalk.com/api/users?email=' + email + '&password=' + password
+    		var email = $('#form-firstname').val();
+    		var password = $('#form-password').val();
 
-		$.ajax({
-			url: url,
-			type: "POST",
-			crossDomain: true,
-			success:function(result){
-				alert(JSON.stringify(result));
-			},
-			error:function(xhr,status,error){
-				alert(status);
-			}
-		});
+    		var url = 'http://cryptoflo-env.eu-west-1.elasticbeanstalk.com/api/users?email=' + email + '&password=' + password
+
+    		$.ajax({
+    			url: url,
+    			type: "POST",
+    			crossDomain: true,
+    			success:function(result){
+    				alert(JSON.stringify(result));
+    			},
+    			error:function(xhr,status,error){
+    				alert(status);
+    			}
+    		});
+
+    	});
 
 });

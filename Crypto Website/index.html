@@ -1,63 +1,128 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Cryptoflo is a Online ID website">
-    <meta name="keywords" content="online id">
-    <meta name="author" content="Justin vd Westhuizen">
-    <title>Cryptoflo Online ID | Welcome</title>
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
+<html lang="en">
 
-  <body>
+    <head>
 
-    <header>
-     <div class="container">
-       <div id="branding">
-         <h1><span class="highlight">Cryptoflo</span></h1>
-       </div>
-       <nav>
-         <ul>
-           <li class="current"><a href="index.html">Home</a></li>
-           <li><a href="about.html">Contact Us</a></li>
-           <li><a href="register.html">Register</a></li>
-           <li><a href="login.html">Login</a></li>
-         </ul>
-       </nav>
-     </div>
-   </header>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Login &amp; Register Templates</title>
 
-   <section id="showcase">
-     <div class="container">
-       <h1>One Online ID For Everything</h1>
-     </div>
-   </section>
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
 
-   <section id="boxes">
-     <div class="container">
-       <div class="box">
-         <img src="./imgs/logo_register.png">
-         <h3>Register</h3>
-           <p>This function allows you to register for you personal online ID.</p>
-       </div>
-       <div class="box">
-         <img src="./imgs/logo_login.png">
-         <h3>Login</h3>
-           <p>This function allows you to login with your online ID.</p>
-       </div>
-       <div class="box">
-         <img src="./imgs/logo_contact.png">
-         <h3>Contact us</h3>
-           <p>This function will direct you to a page with all our contact details.</p>
-       </div>
-     </div>
-   </section>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-   <footer>
-        <p>Cryptoflo, Copyright &copy; 2017</p>
-   </footer>
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
+    </head>
 
-  </body>
+    <body>
+
+        <!-- Top content -->
+        <div class="top-content">
+
+            <div class="inner-bg">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1>Cryptoflo</h1>
+                            <div class="description">
+                            	<p>
+	                            	One online ID for all your transactions across all your applications
+                            	</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-5">
+                        	<div class="form-box">
+	                        	<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3>Login to our site</h3>
+	                            		<p>Enter username and password to log on:</p>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-key"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom">
+				                    <form role="form" action="" method="post" class="login-form">
+				                    	<div class="form-group">
+				                    		<label class="sr-only" for="form-username">Username</label>
+				                        	<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+				                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="form-password">Password</label>
+				                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+				                        </div>
+				                        <button type="submit" class="btn">Sign in!</button>
+				                    </form>
+			                    </div>
+		                    </div>
+                        </div>
+
+                        <div class="col-sm-1 middle-border"></div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-5">
+                        	<div class="form-box">
+                        		<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3>Sign up now</h3>
+	                            		<p>Fill in the form below to get instant access:</p>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-pencil"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom">
+				                    <form role="form" action="" method="post" class="registration-form">
+                              <div class="form-group">
+                                <label class="sr-only" for="form-username">Username</label>
+                                  <input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+                                </div>
+                                <div class="form-group">
+                                  <label class="sr-only" for="form-password">Password</label>
+                                  <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+                                </div>
+				                        <button type="submit" class="btn">Sign me up!</button>
+				                    </form>
+			                    </div>
+                        	</div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
 </html>

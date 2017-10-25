@@ -76,7 +76,7 @@ img { max-width: 100%; }
     color: #fff;
     -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
 }
-.btn-link-2:hover, .btn-link-2:focus, 
+.btn-link-2:hover, .btn-link-2:focus,
 .btn-link-2:active, .btn-link-2:active:focus { outline: 0; opacity: 0.6; background: rgba(0, 0, 0, 0.3); color: #fff; }
 
 
@@ -90,7 +90,7 @@ img { max-width: 100%; }
 	margin: 20px 0 10px 0;
 }
 
-.top-content .description a:hover, 
+.top-content .description a:hover,
 .top-content .description a:focus { border-bottom: 1px dotted #19b9e7; }
 
 .form-box {
@@ -100,7 +100,7 @@ img { max-width: 100%; }
 .form-top {
 	overflow: hidden;
 	padding: 0 25px 15px 25px;
-	background: #f3f3f3;
+	background: #262626;
 	-moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
 	text-align: left;
 }
@@ -125,7 +125,7 @@ img { max-width: 100%; }
 
 .form-bottom {
 	padding: 25px 25px 30px 25px;
-	background: #eee;
+	background: #262626;
 	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
 	text-align: left;
 }
@@ -180,14 +180,13 @@ footer a:hover, footer a:focus { border-bottom: 1px dotted #19b9e7; }
 @media (min-width: 768px) and (max-width: 991px) {}
 
 @media (max-width: 767px) {
-	
+
 	.middle-border { min-height: auto; margin: 65px 30px 0 30px; border-right: 0; border-top: 1px solid #ddd; }
-	
+
 }
 
 @media (max-width: 415px) {
-	
+
 	h1, h2 { font-size: 32px; }
 
 }
-

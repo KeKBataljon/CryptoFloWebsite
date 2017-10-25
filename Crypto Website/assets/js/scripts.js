@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
     if(localStorage.getItem('email')){
         //The user is logged in.
     }
-    
+
     /*
         Login form validation
     */
@@ -14,7 +14,7 @@ jQuery(document).ready(function() {
     });
 
     $('.login-form').on('submit', function(e) {
-
+      e.preventDefault();
     	$(this).find('input[type="text"], input[type="password"], textarea').each(function(){
     		if( $(this).val() == "" ) {
     			e.preventDefault();
@@ -24,6 +24,26 @@ jQuery(document).ready(function() {
     			$(this).removeClass('input-error');
     		}
     	});
+
+      var email = $('#form-loginuser').val();
+      var password = $('#form-loginpwd').val();
+
+      var url = 'http://cryptoflo-env.eu-west-1.elasticbeanstalk.com/api/users/signin?email=' + email + '&password=' + password
+
+      $.ajax({
+        url: url,
+        type: "POST",
+        crossDomain: true,
+        success:function(result){     //if user is verified then allow code 200
+          //console.log(JSON.stringify(result));
+          //When successful
+          localStorage.setItem('user', JSON.stringify(result[0]));
+          window.location.replace('home.html');
+        },
+        error:function(xhr,status,error){  //if user is not  verified then code 401
+          alert(status);
+        }
+      });
 
     });
 

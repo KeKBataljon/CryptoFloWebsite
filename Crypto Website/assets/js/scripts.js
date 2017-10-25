@@ -1,6 +1,11 @@
 
 jQuery(document).ready(function() {
 
+    //Check if the user is logged in
+    if(localStorage.getItem('email')){
+        //The user is logged in.
+    }
+    
     /*
         Login form validation
     */
@@ -54,8 +59,8 @@ jQuery(document).ready(function() {
         		}
     		});
 
-    		var email = $('#form-firstname').val();
-    		var password = $('#form-password').val();
+    		var email = $('#form-user').val();
+    		var password = $('#form-pwd').val();
 
     		var url = 'http://cryptoflo-env.eu-west-1.elasticbeanstalk.com/api/users?email=' + email + '&password=' + password
 
@@ -63,10 +68,12 @@ jQuery(document).ready(function() {
     			url: url,
     			type: "POST",
     			crossDomain: true,
-    			success:function(result){
+    			success:function(result){     //if user is verified then allow code 200
     				alert(JSON.stringify(result));
+            //When successful
+            localStorage.setItem('email', email);
     			},
-    			error:function(xhr,status,error){
+    			error:function(xhr,status,error){  //if user is not  verified then code 401
     				alert(status);
     			}
     		});
